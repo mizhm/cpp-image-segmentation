@@ -30,3 +30,32 @@
 *.exe
 *.out
 *.app
+
+# Temporary files and logs
+*.log
+*.tmp
+*.swp
+*.DS_Store
+
+# Build directories
+build/
+cmake-build-*/
+
+# CMake cache files
+CMakeCache.txt
+CMakeFiles/
+
+# CLion-specific files
+.idea/
+*.iml
+
+# Generated files by CLion and CMake
+Testing/
+Makefile
+CTestTestfile.cmake
+cmake_install.cmake
+compile_commands.json
+
+# Ignore image files if you don’t want them in version control
+images/
+
