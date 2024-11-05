@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.29)
-project(untitledProject)
+project(cpp-image-segmentation)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -13,7 +13,7 @@ find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 # Create the executable
-add_executable(untitledProject main.cpp)
+add_executable(cpp-image-segmentation main.cpp)
 
 # Link OpenCV libraries to the executable
-target_link_libraries(untitledProject ${OpenCV_LIBS})
+target_link_libraries(cpp-image-segmentation ${OpenCV_LIBS})
