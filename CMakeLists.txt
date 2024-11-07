@@ -14,9 +14,9 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 # Enable OpenMP
 find_package(OpenMP REQUIRED)
-if(OpenMP_CXX_FOUND)
+if (OpenMP_CXX_FOUND)
     set(OpenMP_LIB OpenMP::OpenMP_CXX)
-endif()
+endif ()
 
 # Create the executable
 add_executable(cpp-image-segmentation src/main.cpp
@@ -25,6 +25,7 @@ add_executable(cpp-image-segmentation src/main.cpp
         src/algorithm/image_processing.h
         src/algorithm/threshold.cpp
         src/algorithm/edge_detection.cpp
+        src/algorithm/convert_to_gray_scale.cpp
 )
 
 # Link OpenCV libraries to the executable

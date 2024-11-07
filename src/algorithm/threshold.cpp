@@ -9,7 +9,7 @@ namespace image_processing {
         cv::Mat thresholded_image(image.rows, image.cols, image.type());
 
         for (int i = 0; i < image.rows; i++) {
-            for (int j = 0; j < image.col; j++) {
+            for (int j = 0; j < image.cols; j++) {
                 if (image.at<uchar>(i, j) > threshold_value) {
                     thresholded_image.at<uchar>(i, j) = 255;
                 } else {

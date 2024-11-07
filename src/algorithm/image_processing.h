@@ -8,6 +8,8 @@
 #include <opencv2/core.hpp>
 
 namespace image_processing {
+    cv::Mat convert_to_gray_scale(const cv::Mat &image);
+
     cv::Mat threshold(const cv::Mat &image, int threshold_value);
 
     cv::Mat edge_detection(const cv::Mat &image);
